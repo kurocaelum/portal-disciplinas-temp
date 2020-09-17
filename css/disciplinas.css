@@ -12,6 +12,7 @@ body {
     /* background-color: #255774; */
     /* background-color: #1b2838; */
     
+    
 }
 
 .title-subject {
@@ -30,7 +31,7 @@ body {
     width: 100%;
     background-color: transparent;
     color: white;
-    display: none;
+    /* display: none; */
 }
 
 .title-teachers {
