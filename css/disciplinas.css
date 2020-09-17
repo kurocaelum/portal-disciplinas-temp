@@ -31,7 +31,7 @@ body {
     width: 100%;
     background-color: transparent;
     color: white;
-    /* display: none; */
+    display: none;
 }
 
 .title-teachers {
@@ -99,7 +99,7 @@ body {
     margin-top: 20px;
 }
 
-.title-demo {
+.title-downloads {
     color: var(--main-title-bg-color);
 }
 
