@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="/css/disciplinas.css">
+
+
+
+
     <title>Disciplina Teste</title>
 </head>
 
@@ -54,12 +58,15 @@
                         <!-- Teste de video responsivo -->
                         <!-- <iframe class="videoclip" src="https://www.youtube.com/embed/0nC0ufkEsoE"></iframe> -->
 
-                        <div class="teacher-video-container">
+                        <div class="subject-video-container">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0nC0ufkEsoE"
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jg2j5-2cYdY"
                                     allowfullscreen></iframe>
                             </div>
-                            <p class="text-right mt-2"><a href="midia-disciplina.html" class="text-right">Ver mais</a></p>
+                            <div class="links text-right mt-3">
+                                <a href="midia-disciplina.html" class="btn btn-outline-primary subject-video-link ">Ver
+                                    mais</a>
+                            </div>
                         </div>
                     </div>
 
@@ -71,27 +78,24 @@
                     <div class="teachers-container">
                         <h1 class="title-teachers">Professores</h1>
 
-                        <!-- <p class="name-teacher">COD01030 - Bruno Santana</p>
-                        <p class="name-teacher">COD01029 - Eugênio Paccelli Jucelino</p>
-                        <p class="name-teacher">COD01029 - Jucelino Barreira da Silva</p> -->
-                        
-                        <!-- TODO Mudar nome/foto do professor dinamicamente -->
-                        <select id="teacher-select">
-                            <option value="0">COD01030 - Bruno Santana</option>
-                            <option value="0">COD01029 - Eugênio Paccelli Jucelino</option>
-                            <option value="0">COD01029 - Jucelino Barreira da Silva</option>
-                        </select>
+                        <div class="input-group">
+                            <select class="custom-select" id="select-teacher" onChange="swap_teacher(this)">
+                                <option value="0" selected>COD01030 - Bruno Santana</option>
+                                <option value="1">COD01031 - Eugênio Paccelli Jucelino</option>
+                                <option value="2">COD01032 - Eiji Adachi Medeiros Barbosa</option>
+                            </select>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="container-teacher-profile">
-
+            <div class="container-teacher-profile" index-teacher='0'>
                 <div class="row my-4">
                     <div class="col-sm-12 col-md-6 text-">
 
                         <img src="img/bruno-santana.JPG" alt="" height="200px" srcset="">
-                        <h1 class="teacher-name-bg">Bruno Santana</h1>
+                        <h1 class="teacher-name-bg mt-2">Bruno Santana</h1>
 
 
                         <div class="teacher-rating">
@@ -103,17 +107,12 @@
                                     <div class="col-4 pr-0">
                                         <span class="rating-option">Trabalho em grupo</span>
                                     </div>
-                                    <div class="col pl-0">
+                                    <div class="col pl-1">
                                         <span class="fa fa-star checked-star"></span>
                                         <span class="fa fa-star checked-star"></span>
                                         <span class="fa fa-star checked-star"></span>
                                     </div>
                                 </div>
-
-                                <!-- <span>Trabalho em grupo</span>
-                                <span class="fa fa-star checked-star"></span>
-                                <span class="fa fa-star checked-star"></span>
-                                <span class="fa fa-star checked-star"></span> -->
                             </div>
 
                             <div class="star-rating">
@@ -121,7 +120,7 @@
                                     <div class="col-4 pr-0">
                                         <span class="rating-option">Apresentação Oral</span>
                                     </div>
-                                    <div class="col pl-0">
+                                    <div class="col pl-1">
                                         <span class="fa fa-star checked-star"></span>
                                         <span class="fa fa-star checked-star"></span>
 
@@ -136,7 +135,7 @@
                                     <div class="col-4 pr-0">
                                         <span class="rating-option">Criação de texto</span>
                                     </div>
-                                    <div class="col pl-0">
+                                    <div class="col pl-1">
                                         <span class="fa fa-star checked-star"></span>
 
                                     </div>
@@ -144,7 +143,14 @@
 
                             </div>
                             <div class="star-rating">
-                                <span class="rating-option">Programação</span>
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Programação</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -159,7 +165,7 @@
                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0nC0ufkEsoE"
                                     allowfullscreen></iframe>
                             </div>
-                           <!--- <p class="text-right mt-2"><a href="http://" class="text-right">Ver mais</a></p> -->
+                            <!--- <p class="text-right mt-2"><a href="http://" class="text-right">Ver mais</a></p> -->
                         </div>
 
                         <div class="teacher-podcast-container">
@@ -167,12 +173,16 @@
 
                             <div class="teacher-podcast">
                                 <audio controls class="podcast">
-                                    <source src="songs/saint_roses_remix.mp3"
-                                        type="audio/mpeg">
+                                    <source src="songs/saint_roses_remix.mp3" type="audio/mpeg">
                                 </audio>
                             </div>
-                            
-                            <p class="text-right mt-2"><a href="midia-disciplina.html" class="text-right">Ver mais</a></p>
+
+                            <!-- <p class="text-right mt-2"><a href="midia-disciplina.html" class="text-right">Ver mais</a>
+                            </p> -->
+                            <div class="links text-right mt-3">
+                                <a href="midia-disciplina.html" class="btn btn-outline-light subject-video-link ">Ver
+                                    mais</a>
+                            </div>
                         </div>
                     </div>
 
@@ -209,8 +219,11 @@
                     <div class="col-12 ">
                         <div class="downloads-container">
                             <h1 class="title-downloads">Downloads</h1>
-                            <a href="https://drive.google.com/file/d/1lWOT7xJIA0NPxRygFmARudeycsl-fZaI/view?usp=sharing" target="_Blank">Aula teste
-                                <img src="/img/img-icon-downloads-pdf.png" alt="Imagem de download de pdf" width="32" height="32">
+                            <a href="https://drive.google.com/file/d/1lWOT7xJIA0NPxRygFmARudeycsl-fZaI/view?usp=sharing"
+                                target="_Blank" class="downloads-link">
+                                <!-- <img src="/img/img-icon-downloads-pdf.png" alt="Imagem de download de pdf" width="32" height="32"> -->
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                <span>Aula teste</span>
                             </a>
                         </div>
                     </div>
@@ -219,25 +232,340 @@
                 <div class="row">
                     <div class="col-12 my-4">
                         <div class="common-questions-container">
-
                             <h1 class="title-common-questions">Perguntas frequentes</h1>
-
                             <blockquote class="blockquote question">
                                 <span class="question-title">Why do we use it?</span>
-                                <footer class="blockquote-footer answer"> It is a long established fact that a reader will be
+                                <footer class="blockquote-footer answer"> It is a long established fact that a reader
+                                    will be
                                     distracted
                                     by the readable content </footer>
                             </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container-teacher-profile d-none" index-teacher='1'>
+                <div class="row my-4">
+                    <div class="col-sm-12 col-md-6 text-">
+
+                        <img src="img/eugenio-pacceli.jpg" alt="" height="200px" srcset="">
+                        <h1 class="teacher-name-bg mt-2">Eugênio Paccelli Jucelino</h1>
+
+
+                        <div class="teacher-rating">
+                            <h1 class="mt-4 title-rating">Classificação</h1>
+                            <!-- adicionar as classificações que estão no edital -->
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Trabalho em grupo</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+                                        <span class="fa fa-star checked-star"></span>
+                                        <span class="fa fa-star checked-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Apresentação Oral</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Criação de texto</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Programação</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6 py-xs-5">
+                        <!-- Teste de video responsivo -->
+                        <!-- <iframe class="videoclip" src="https://www.youtube.com/embed/0nC0ufkEsoE"></iframe> -->
+
+                        <div class="teacher-video-container">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cNxNWBrMtig"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <!--- <p class="text-right mt-2"><a href="http://" class="text-right">Ver mais</a></p> -->
+                        </div>
+
+                        <div class="teacher-podcast-container">
+                            <h1 class="title-teacher-podcast">Podcasts</h1>
+
+                            <div class="teacher-podcast">
+                                <audio controls class="podcast">
+                                    <source src="songs/saint_roses_remix.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- <p class="text-right mt-2"><a href="midia-disciplina.html" class="text-right">Ver mais</a>
+                            </p> -->
+                            <div class="links text-right mt-3">
+                                <a href="midia-disciplina.html" class="btn btn-outline-light subject-video-link ">Ver
+                                    mais</a>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+
+
+                <div class="row">
+                    <div class="col-12 my-4">
+
+                        <div class="difficulties-container">
+                            <h1 class="title-difficulties">Dificuldades</h1>
+
+                            <p class="text-difficulties">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries,
+                                but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                passages,
+                                and more recently with desktop publishing software like Aldus PageMaker including
+                                versions
+                                of
+                                Lorem Ipsum</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="downloads-container">
+                            <h1 class="title-downloads">Downloads</h1>
+                            <a href="https://drive.google.com/file/d/1lWOT7xJIA0NPxRygFmARudeycsl-fZaI/view?usp=sharing"
+                                target="_Blank" class="downloads-link">
+                                <!-- <img src="/img/img-icon-downloads-pdf.png" alt="Imagem de download de pdf" width="32" height="32"> -->
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                <span>Aula teste</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 my-4">
+                        <div class="common-questions-container">
+                            <h1 class="title-common-questions">Perguntas frequentes</h1>
+                            <blockquote class="blockquote question">
+                                <span class="question-title">Why do we use it?</span>
+                                <footer class="blockquote-footer answer"> It is a long established fact that a reader
+                                    will be
+                                    distracted
+                                    by the readable content </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="container-teacher-profile d-none" index-teacher='2'>
+                <div class="row my-4">
+                    <div class="col-sm-12 col-md-6 text-">
+
+                        <img src="img/eiji-adachi.jpg" alt="" height="200px" srcset="">
+                        <h1 class="teacher-name-bg mt-2">Eiji Adachi Medeiros Barbosa</h1>
+
+
+                        <div class="teacher-rating">
+                            <h1 class="mt-4 title-rating">Classificação</h1>
+                            <!-- adicionar as classificações que estão no edital -->
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Trabalho em grupo</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Apresentação Oral</span>
+                                    </div>
+                                    <div class="col pl-1">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Criação de texto</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="star-rating">
+                                <div class="row">
+                                    <div class="col-4 pr-0">
+                                        <span class="rating-option">Programação</span>
+                                    </div>
+                                    <div class="col pl-1">
+                                        <span class="fa fa-star checked-star"></span>
+                                        <span class="fa fa-star checked-star"></span>
+                                        <span class="fa fa-star checked-star"></span>
+                                        <span class="fa fa-star checked-star"></span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6 py-xs-5">
+                        <!-- Teste de video responsivo -->
+                        <!-- <iframe class="videoclip" src="https://www.youtube.com/embed/0nC0ufkEsoE"></iframe> -->
+
+                        <div class="teacher-video-container">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VBEAtwaN91I"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <!--- <p class="text-right mt-2"><a href="http://" class="text-right">Ver mais</a></p> -->
+                        </div>
+
+                        <div class="teacher-podcast-container">
+                            <h1 class="title-teacher-podcast">Podcasts</h1>
+
+                            <div class="teacher-podcast">
+                                <audio controls class="podcast">
+                                    <source src="songs/saint_roses_remix.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- <p class="text-right mt-2"><a href="midia-disciplina.html" class="text-right">Ver mais</a>
+                            </p> -->
+                            <div class="links text-right mt-3">
+                                <a href="midia-disciplina.html" class="btn btn-outline-light subject-video-link ">Ver
+                                    mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-12 my-4">
+
+                        <div class="difficulties-container">
+                            <h1 class="title-difficulties">Dificuldades</h1>
+
+                            <p class="text-difficulties">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries,
+                                but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                passages,
+                                and more recently with desktop publishing software like Aldus PageMaker including
+                                versions
+                                of
+                                Lorem Ipsum</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="downloads-container">
+                            <h1 class="title-downloads">Downloads</h1>
+                            <a href="https://drive.google.com/file/d/1lWOT7xJIA0NPxRygFmARudeycsl-fZaI/view?usp=sharing"
+                                target="_Blank" class="downloads-link">
+                                <!-- <img src="/img/img-icon-downloads-pdf.png" alt="Imagem de download de pdf" width="32" height="32"> -->
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                <span>Aula teste</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 my-4">
+                        <div class="common-questions-container">
+                            <h1 class="title-common-questions">Perguntas frequentes</h1>
+                            <blockquote class="blockquote question">
+                                <span class="question-title">Why do we use it?</span>
+                                <footer class="blockquote-footer answer"> It is a long established fact that a reader
+                                    will be
+                                    distracted
+                                    by the readable content </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </section>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -248,6 +576,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="/js/disciplinas.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="/css/disciplinas.css">
     <title>Disciplina Teste - Mídias</title>
 </head>
+
 <body>
     <section>
         <div class="container">
@@ -23,7 +25,11 @@
                 </div>
             </div>
 
-            <a href="disciplinas.html">Voltar</a>
+            <!-- <a href="disciplinas.html">Voltar</a> -->
+
+            <div class="back-links">
+                <a href="disciplinas.html" class="btn btn-outline-primary subject-video-link ">Voltar</a>
+            </div>
 
             <div class="row my-4">
                 <!-- <div class="col-sm-12 py-xs-5"> -->
@@ -39,19 +45,19 @@
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0nC0ufkEsoE"
                                 allowfullscreen></iframe>
                         </div>
-                        
+
                         <h3 class="title-description-subject my-3">Vídeo 1</h3>
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0nC0ufkEsoE"
                                 allowfullscreen></iframe>
                         </div>
-                        
+
                         <h3 class="title-description-subject my-3">Vídeo 2</h3>
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0nC0ufkEsoE"
                                 allowfullscreen></iframe>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
 
@@ -62,16 +68,14 @@
                     <div class="teacher-podcast">
                         <h3 class="title-description-subject my-3">Podcast 1</h3>
                         <audio controls class="podcast">
-                            <source src="songs/saint_roses_remix.mp3"
-                                type="audio/mpeg">
+                            <source src="songs/saint_roses_remix.mp3" type="audio/mpeg">
                         </audio>
                     </div>
-                    
+
                     <div class="teacher-podcast">
                         <h3 class="title-description-subject my-3">Podcast 2</h3>
                         <audio controls class="podcast">
-                            <source src="songs/saint_roses_remix.mp3"
-                                type="audio/mpeg">
+                            <source src="songs/saint_roses_remix.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                 </div>
@@ -81,16 +85,19 @@
                 <div class="col-12">
                     <div class="downloads-container my-3">
                         <h1 class="title-description-subject mb-3">Downloads</h1>
-                        <a href="https://drive.google.com/file/d/1lWOT7xJIA0NPxRygFmARudeycsl-fZaI/view?usp=sharing" target="_Blank">Aula teste
-                            <img src="/img/img-icon-downloads-pdf.png" alt="Imagem de download de pdf" width="32" height="32">
+                        <a href="https://drive.google.com/file/d/1lWOT7xJIA0NPxRygFmARudeycsl-fZaI/view?usp=sharing"
+                            target="_Blank" class="downloads-link">
+                            <!-- <img src="/img/img-icon-downloads-pdf.png" alt="Imagem de download de pdf" width="32" height="32"> -->
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            <span>Aula teste</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -100,5 +107,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
 </body>
+
 </html>
