@@ -17,8 +17,8 @@
 .teacher-name-bg,
 .title-rating,
 .title-teacher-podcast,
-.title-difficulties,
-.title-downloads,
+.title-obstacles,
+.title-demo,
 .title-common-questions {
     color: var(--main-title-bg-color);
 }
@@ -40,7 +40,7 @@
 }
 
 .rating-option,
-.text-difficulties {
+.text-obstacles {
     color: var(--main-md-color);
 }
 
