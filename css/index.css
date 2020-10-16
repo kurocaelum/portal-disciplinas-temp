@@ -1,0 +1,27 @@
+:root {
+    --main-bg-color: #0c3f7c;
+    --main-md-color: #acb2b8;
+    --main-title-bg-color: white;
+    --main-text-color: black;
+    /* --main-bg-color: black;
+    --main-md-color: #2A4B7 C; */
+}
+
+body {
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+    background-color: #255774;
+    background-color: #1b2838;
+}
+
+.container {
+    padding-top: 8rem;
+}
+
+.container p {
+    color: var(--main-md-color);
+}
+.title-subject {
+    color: var(--main-title-bg-color);
+    font-size: 4rem;
+}
+
