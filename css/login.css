@@ -1,0 +1,23 @@
+:root {
+    --main-bg-color: #0c3f7c;
+    --main-title-bg-color: white;
+}
+
+.body-container{
+    height: 100vh;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.1);
+}
+
+
+
+
