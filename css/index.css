@@ -9,8 +9,8 @@
 
 body {
     background: -webkit-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
-    background-color: #255774;
-    background-color: #1b2838;
+    background-color: var(--main-bg-color);
+    /* background-color: #1b2838; */
 }
 
 .container {
